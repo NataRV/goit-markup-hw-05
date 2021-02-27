@@ -59,13 +59,14 @@
       <section class="hero">
         <div class="hero-text">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero-btn" type="button">Заказать услугу</button>
 
-          <div class="backdrop is-hidden">
-          <div class="modal">
-          
-          <button></button>
-          </div>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+
+              <button data-modal-close class="close'btn" type="button"> close</button>
+
+            </div>
           </div>
         </div>
       </section>
@@ -136,12 +137,17 @@
         <ul class="list">
           <li class="what-we-do-list-item">
             <img src="./images/main/box1.jpg" alt="компьютер" width="370" height="294" />
+            <p class="what-we-do-text">Десктопные приложения</p>
           </li>
           <li class="what-we-do-list-item">
             <img src="./images/main/box2.jpg" alt="мобильный" width="370" height="294" />
+            <p class="what-we-do-text">Мобильные приложения</p>
+
           </li>
           <li class="what-we-do-list-item">
             <img src="./images/main/box3.jpg" alt="планшет" width="370" height="294" />
+            <p class="what-we-do-text">Дизайнерские решения</p>
+
           </li>
         </ul>
       </div>
@@ -433,6 +439,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    })();
+  </script>
 
 </body>
 
