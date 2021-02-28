@@ -270,7 +270,7 @@ ul {
 }
 .overlay {
   height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -437,6 +437,7 @@ background-color: rgba(47, 48, 58, 0.8);
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .team-list-item {
@@ -450,7 +451,7 @@ background-color: rgba(47, 48, 58, 0.8);
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
+  
 }
 .social-item {
   width: 44px;
@@ -602,7 +603,7 @@ background-color: rgba(47, 48, 58, 0.8);
   background-color: var(--accent-color);
 }
 .footer-contacts {
-  padding-right: 70px;
+  margin-right: 70px;
 }
 /* ========== End Footer========== */
 
