@@ -64,7 +64,11 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
 
-              <button data-modal-close class="close'btn" type="button"> close</button>
+              <button data-modal-close class="close-btn" type="button">
+                <svg class="close-icon">
+                  <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+              </button>
 
             </div>
           </div>
@@ -440,22 +444,7 @@
     </div>
   </footer>
 
-  <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-modal-open]'),
-        closeModalBtn: document.querySelector('[data-modal-close]'),
-        modal: document.querySelector('[data-modal]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-      }
-    })();
-  </script>
+  <script src="./js/modal.js"></script>
 
 </body>
 

@@ -307,6 +307,26 @@ ul {
   min-height: 521px;
   background-color: var(--white-color);
 }
+.close-btn{
+  position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.close-icon{
+  width: 18px;
+  height: 18px;
+  fill: var(--black-color);
+}
 /* ========== END HERO ========== */
 
 /* ========== Features========== */
