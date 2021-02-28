@@ -677,12 +677,13 @@ img {
   background-color: var(--accent-color);
   transform: translateY(100%);
  
-  transition: color 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .portfolio-item-link:hover .description-thumb,
 .portfolio-item-link:focus .description-thumb{
   transform: translateY(0%);
+  
 }
 
 
